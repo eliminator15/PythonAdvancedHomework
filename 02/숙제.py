@@ -1,7 +1,7 @@
-
+#1
 def solution(point):
 	if point >= 1000:
-		answer = point * 0.97
+		answer = point - (point % 100)
 	return answer
 
 point = 2323
@@ -32,3 +32,19 @@ print("solution 함수의 반환 값은", ret, "입니다.")
 calorie = [713, 665, 873, 500, 751, 1000, 778]
 ret = solution(calorie)
 print("solution 함수의 반환 값은", ret, "입니다.") # 1237
+
+#3
+# 다음과 같이 import를 사용할 수 있습니다.
+# import math
+
+def solution(scores, cutline):
+    answer = 0
+    for score in scores:
+        if score >= 60:
+            answer += 1
+    return answer
+
+scores = [80, 90, 55, 60, 59]
+cutline = 60
+ret = solution(scores, cutline)
+print("solution 함수의 반환 값은", ret, "입니다.")
