@@ -44,8 +44,7 @@ scores = [80, 31, 17, 20, 60, 98, 59, 88, 75]
 n = 1
 ret = solution(scores, n)
 print("solution 함수의 반환 값은", ret, "입니다.") # 7
-
-#3
+  #3
 def solution(num_apple, num_carrot, k):
     answer = 0
     
@@ -58,13 +57,12 @@ def solution(num_apple, num_carrot, k):
     num_carrot -= answer
 
     i = 0
-    while k - (num_apple - num_carrot + i) > 0:
+    while k - (num_apple + num_carrot + i) > 0:
         if i % 4 == 0:
             answer += 1
-        i = i + 1
-        
+        i += 1
     return answer
-
+    
 num_apple1 = 5
 num_carrot1 = 1
 k1 = 2
