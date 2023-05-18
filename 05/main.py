@@ -2,7 +2,7 @@
 
 def solution(point):
 	if point >= 1000:
-		answer = 
+		answer = point - (point // 100)
 	return answer
 
 point = 2323
